@@ -12,7 +12,8 @@
         {{ post.content|safe }}
     {% endcol %}
 {% endrow %}
-{% endblock %}
+
+{% include "blog/post-comments.html" %}
 
 
 {% row %}
@@ -20,3 +21,5 @@
         {% recent_posts post %}
     {% endcol %}
 {% endrow %}
+
+{% endblock %}
